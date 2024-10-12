@@ -320,9 +320,9 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    position: {x: 0.000000, y: 0.000000, z: -52.654659}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
-    scale: {x: 1.500000, y: 1.500000, z: 1.500000}
+    scale: {x: 2.000000, y: 1.500000, z: 1.500000}
     hasSegmentScaleCompensation: false
   Children:
     - !<own> f92a999c-2398-4cb3-90dc-76f514627c4d
@@ -1038,7 +1038,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 1.831030, z: 0.000000}
+    position: {x: 0.000000, y: 2.070429, z: 0.000000}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -5420,7 +5420,7 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 48
+  FontSize: 60
   Font: !<reference> 00000000-0000-0000-0000-000000000000
   LayoutRect:
     left: -7.500000
@@ -7935,7 +7935,7 @@
   ScriptInputs:
     "":
       squishObject: !<reference.SceneObject> 03e5a0b0-7a69-4281-988f-1e3cb4ece25b
-      verticalSquish: 0.600000
+      verticalSquish: 0.610000
       horizontalSquish: !<float> 1.000000
   ScriptTypes:
     "":
