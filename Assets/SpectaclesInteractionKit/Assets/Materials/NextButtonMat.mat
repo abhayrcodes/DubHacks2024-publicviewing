@@ -31,7 +31,7 @@
       value: 0
     baseColor:
       typeIdx: 5
-      value: {x: 1.000000, y: 0.210483, z: 0.234195, w: 1.000000}
+      value: {x: 0.984314, y: 0.772549, z: 0.192157, w: 1.000000}
     overrideTimeDelta:
       typeIdx: 1
       value: 0.000000
