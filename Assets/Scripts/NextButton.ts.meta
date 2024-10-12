@@ -24,13 +24,19 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    isBack: false
     pinchButton: false
+    stepText: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - pinchButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
+      isBack: false
+      stepText: !<reference.Text> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input PinchButton pinchButton
+    - // @input bool isBack
+    - // @input Component.Text stepText
