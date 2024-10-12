@@ -52,7 +52,7 @@
       value: {x: 0.078431, y: 0.078431, z: 0.078431, w: 1.000000}
     baseColor:
       typeIdx: 5
-      value: {x: 0.274510, y: 0.274510, z: 0.274510, w: 1.000000}
+      value: {x: 0.220111, y: 0.345098, z: 0.234104, w: 1.000000}
     colorMultiplier:
       typeIdx: 1
       value: 1.000000
