@@ -11,6 +11,7 @@ export class RecipeSelector extends BaseScriptComponent {
   @input recipeController: RecipeController;
 
   private recipeData: any;
+  private steps: any;
 
   onAwake() {
     this.createEvent("OnStartEvent").bind(() => {
@@ -52,15 +53,7 @@ export class RecipeSelector extends BaseScriptComponent {
   public loadData(jsonString: string) {
     const jsonData = JSON.parse(jsonString);
 
-    for (const elem of jsonData) {
-      this.recipeData = [
-        {
-          ingredients: elem.ingredients,
-          rcpName: elem.name,
-          steps: elem.steps,
-        },
-        ...this.recipeData,
-      ];
-    }
+    this.steps = jsonData.steps;
+    this.recipeController.updateInstructions(this.steps);
   }
 }

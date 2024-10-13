@@ -24,19 +24,22 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    keyword: false
     recipeSelector: false
+    searchKeyword: false
+    timerKeyword: false
     webRequest: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
-    - keyword: ""
-      recipeSelector: !<MappingBased.RecipeSelector> 00000000-0000-0000-0000-000000000000
+    - recipeSelector: !<MappingBased.RecipeSelector> 00000000-0000-0000-0000-000000000000
       webRequest: !<MappingBased.WebRequest> 00000000-0000-0000-0000-000000000000
+      searchKeyword: ""
+      timerKeyword: ""
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input string keyword
+    - // @input string searchKeyword
+    - // @input string timerKeyword
     - // @input RecipeSelector recipeSelector
     - // @input WebRequest webRequest
