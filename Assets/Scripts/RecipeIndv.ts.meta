@@ -1,0 +1,39 @@
+- !<AssetImportMetadata/5761b9f6-dc88-46b1-96ef-759c7bbfb04a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> a9811163-b702-489b-8598-5df4f3c527ae
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> a9811163-b702-489b-8598-5df4f3c527ae
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> d50b0826-ed4f-41fa-b02d-72648cf651e0
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/7421d050-e13e-4ba3-9c9d-39de889f3443>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/d50b0826-ed4f-41fa-b02d-72648cf651e0>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    nameText: false
+    selectionButton: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - selectionButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
+      nameText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input PinchButton selectionButton
+    - // @input Component.Text nameText
