@@ -1,18 +1,14 @@
 import { PinchButton } from "SpectaclesInteractionKit/Components/UI/PinchButton/PinchButton";
+import { RecipeController } from "./RecipeController";
 
 @component
 export class NextButton extends BaseScriptComponent {
   @input pinchButton: PinchButton;
   @input isBack: boolean;
   @input stepText: Text;
-  @input currInstruction: Text;
-  
-  instructions = ["this is instruction 1", "this is instruction 2", "this is instruction 3", "this is instruction 4"]
+  @input recipeController: RecipeController;
 
   onAwake() {
-    // Register Listener
-    this.currInstruction.text = this.instructions[0];
-
     this.pinchButton.onButtonPinched.add(() => {
       this.onButtonPressed();
     });
@@ -22,11 +18,10 @@ export class NextButton extends BaseScriptComponent {
     let stepNumber = parseInt(
       this.stepText.text[this.stepText.text.length - 1]
     );
-    stepNumber += this.isBack ? -1 : 1;
-    stepNumber = Math.min(this.instructions.length, stepNumber);
-    stepNumber = Math.max(1, stepNumber);
-    this.stepText.text = `Step #${stepNumber}`;
 
-    this.currInstruction.text = this.instructions[stepNumber - 1];
+    const incremenet = this.isBack ? -1 : 1;
+
+    const newIndex = this.recipeController.updateIndex(stepNumber + incremenet);
+    this.stepText.text = `Step #${newIndex}`;
   }
 }

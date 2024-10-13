@@ -1,0 +1,39 @@
+- !<AssetImportMetadata/acdd2e6e-59a0-4100-b0b0-fcc3bc635d48>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> bb45a469-af7d-4c7e-a7c5-11caca9596e2
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> bb45a469-af7d-4c7e-a7c5-11caca9596e2
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 17d3207d-b1c2-4bcb-b0c1-7c7bb728f14f
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/d8db727d-11b6-415c-ac5e-6e0884781662>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/17d3207d-b1c2-4bcb-b0c1-7c7bb728f14f>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    instructionText: false
+    stepText: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - instructionText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      stepText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Text instructionText
+    - // @input Component.Text stepText
