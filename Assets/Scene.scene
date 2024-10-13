@@ -11810,7 +11810,7 @@
     {}
   ScriptInputs:
     "":
-      itemPrefab: !<reference.ObjectPrefab> 6db3c714-1232-43e5-bb18-bfb51a3c384b
+      itemPrefab: !<reference.ObjectPrefab> 124085f6-5578-44b0-a330-a137857db398
       itemsCount: !<float> 10.000000
   ScriptTypes:
     "":
@@ -13539,6 +13539,7 @@
     "":
       keyword: search
       recipeSelector: !<MappingBased.RecipeSelector> 19a1777f-d206-4ad2-97c0-eecc71576c33
+      webRequest: !<MappingBased.WebRequest> 8388f3a3-1850-44b4-9b24-0cbe54237acf
   ScriptTypes:
     "":
       {}

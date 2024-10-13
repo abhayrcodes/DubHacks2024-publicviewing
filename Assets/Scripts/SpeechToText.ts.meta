@@ -26,14 +26,17 @@
   ScriptInputsHidden:
     keyword: false
     recipeSelector: false
+    webRequest: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - keyword: ""
       recipeSelector: !<MappingBased.RecipeSelector> 00000000-0000-0000-0000-000000000000
+      webRequest: !<MappingBased.WebRequest> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input string keyword
     - // @input RecipeSelector recipeSelector
+    - // @input WebRequest webRequest
