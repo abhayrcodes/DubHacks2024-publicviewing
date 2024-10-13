@@ -34,6 +34,7 @@
     - pinchButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
       isBack: false
       stepText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      currInstruction: !<reference.Text> 00000000-0000-0000-0000-000000000000
       recipeController: !<MappingBased.RecipeController> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
