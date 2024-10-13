@@ -13224,7 +13224,7 @@
     {}
   ScriptInputs:
     "":
-      searchKeyword: goon
+      searchKeyword: make
       timerKeyword: timer
       recipeSelector: !<MappingBased.RecipeSelector> 19a1777f-d206-4ad2-97c0-eecc71576c33
       webRequest: !<MappingBased.WebRequest> 8388f3a3-1850-44b4-9b24-0cbe54237acf

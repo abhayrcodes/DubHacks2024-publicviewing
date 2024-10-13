@@ -1,23 +1,45 @@
 import { GridContentCreator } from "../SpectaclesInteractionKit/Components/UI/ScrollView/GridContentCreator";
-import { RecipeSelector } from "./RecipeSelector";
+import { RecipeController } from "./RecipeController";
 import { TimeManager } from "./TimeManager";
-import { cleanString, getNumber } from "./utils";
+import { cleanString } from "./utils";
 import { WebRequest } from "./WebRequest";
 
 @component
 export class SpeechToText extends BaseScriptComponent {
   @input searchKeyword: string;
   @input timerKeyword: string;
-  @input recipeSelector: RecipeSelector;
+  @input nextKeyword: string;
+  @input backKeyword: string;
+
   @input webRequest: WebRequest;
   @input timeManager: TimeManager;
   @input gridCC: GridContentCreator;
+  @input stepText: Text;
+  @input recipeController: RecipeController;
 
   private readonly voiceMlModule =
     require("LensStudio:VoiceMLModule") as VoiceMLModule;
 
   onAwake() {
     this.createEvent("OnStartEvent").bind(() => this.onStart());
+  }
+
+  nextStep() {
+    let stepNumber = parseInt(
+      this.stepText.text[this.stepText.text.length - 1]
+    );
+
+    const newIndex = this.recipeController.updateIndex(stepNumber + 1);
+    this.stepText.text = `Step #${newIndex}`;
+  }
+
+  prevStep() {
+    let stepNumber = parseInt(
+      this.stepText.text[this.stepText.text.length - 1]
+    );
+
+    const newIndex = this.recipeController.updateIndex(stepNumber - 1);
+    this.stepText.text = `Step #${newIndex}`;
   }
 
   handleSearch(transcription: string) {
@@ -38,15 +60,13 @@ export class SpeechToText extends BaseScriptComponent {
       this.webRequest.fetchRecipe(searchTerm, (s: string) => {
         data = JSON.parse(s);
         this.gridCC.updateIngs(data.ingredients.keys);
-        this.recipeSelector.loadData(data);
+        this.recipeController.updateInstructions(data.instructions);
       });
     }
   }
 
   handleTimer(transcription: string) {
     const cleaned = cleanString(transcription).toLowerCase();
-
-    print(cleaned);
 
     const index = cleaned.indexOf(this.timerKeyword);
 
@@ -60,6 +80,26 @@ export class SpeechToText extends BaseScriptComponent {
     const number = parseInt(rest.trim().split(" ")[1]);
 
     this.timeManager.instantiateTimer(number);
+  }
+
+  handleBack(transcription: string) {
+    const cleaned = cleanString(transcription).toLowerCase();
+
+    const index = cleaned.indexOf(this.backKeyword);
+
+    if (index == -1) return;
+
+    this.prevStep();
+  }
+
+  handleNext(transcription: string) {
+    const cleaned = cleanString(transcription).toLowerCase();
+
+    const index = cleaned.indexOf(this.nextKeyword);
+
+    if (index == -1) return;
+
+    this.nextStep();
   }
 
   onStart() {
@@ -82,6 +122,8 @@ export class SpeechToText extends BaseScriptComponent {
 
         this.handleSearch(event.transcription);
         this.handleTimer(event.transcription);
+        this.handleNext(event.transcription);
+        this.handleBack(event.transcription);
       }
     });
   }
