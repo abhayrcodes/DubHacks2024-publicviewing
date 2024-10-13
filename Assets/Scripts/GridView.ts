@@ -30,7 +30,7 @@ export class GridContentCreator extends BaseScriptComponent {
 
     for (let i = 0; i < this.itemsCount; i++) {
       const item = this.itemPrefab.instantiate(this.getSceneObject());
-      item.getChild(0).getComponent("Component.Text").text =
+      item.getChild(0).getComponent("Text").text =
         this.ingredients[i];
       const screenTransform = item.getComponent("Component.ScreenTransform");
       screenTransform.offsets.setCenter(new vec2(0, yStart + yOffset * i));
