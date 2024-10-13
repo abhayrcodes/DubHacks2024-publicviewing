@@ -11,3 +11,4 @@ tsconfig.json
 
 
 env.ts
+node_modules
