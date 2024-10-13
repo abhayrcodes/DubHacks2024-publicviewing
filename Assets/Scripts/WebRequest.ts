@@ -1,15 +1,31 @@
+import { OPEN_AI_KEY } from "./env";
+
 @component
 export class WebRequest extends BaseScriptComponent {
   @input remoteServiceModule: RemoteServiceModule;
 
-  onAwake() {
-    this.createEvent("OnStartEvent").bind(() => this.onStart());
-  }
-
-  onStart() {
+  public fetchRecipe(s: string) {
     const request = RemoteServiceHttpRequest.create();
-    request.method = RemoteServiceHttpRequest.HttpRequestMethod.Get;
-    request.url = "https://randomuser.me/api";
+    request.method = RemoteServiceHttpRequest.HttpRequestMethod.Post;
+    request.url = "https://api.openai.com/v1/chat/completions";
+    request.body = JSON.stringify({
+      model: "gpt-4o-mini",
+      messages: [
+        {
+          role: "system",
+          content:
+            'Reverse the string I say. Example: If I say "cat", reply "tac"',
+        },
+        {
+          role: "user",
+          content: s,
+        },
+      ],
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${OPEN_AI_KEY}`,
+      },
+    });
 
     this.remoteServiceModule.performHttpRequest(request, (response) => {
       print(`HTTP CODE ${response.statusCode}`);
