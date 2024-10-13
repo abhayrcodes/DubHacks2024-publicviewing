@@ -1,10 +1,12 @@
 import { RecipeSelector } from "./RecipeSelector";
 import { cleanString } from "./utils";
+import { WebRequest } from "./WebRequest";
 
 @component
 export class SpeechToText extends BaseScriptComponent {
   @input keyword: string;
   @input recipeSelector: RecipeSelector;
+  @input webRequest: WebRequest;
 
   private readonly voiceMlModule =
     require("LensStudio:VoiceMLModule") as VoiceMLModule;
@@ -33,6 +35,8 @@ export class SpeechToText extends BaseScriptComponent {
           );
 
           print(`Searching for: ${searchTerm}`);
+
+          this.webRequest.fetchRecipe(searchTerm);
         }
       }
     });
