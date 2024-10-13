@@ -50,9 +50,7 @@ export class RecipeSelector extends BaseScriptComponent {
     };
   }
 
-  public loadData(jsonString: string) {
-    const jsonData = JSON.parse(jsonString);
-
+  public loadData(jsonData: any) {
     this.steps = jsonData.steps;
     this.recipeController.updateInstructions(this.steps);
   }

@@ -24,6 +24,7 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    gridCC: false
     recipeSelector: false
     searchKeyword: false
     timeManager: false
@@ -37,6 +38,7 @@
       searchKeyword: ""
       timerKeyword: ""
       timeManager: !<MappingBased.TimeManager> 00000000-0000-0000-0000-000000000000
+      gridCC: !<MappingBased.GridContentCreator> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -46,3 +48,4 @@
     - // @input RecipeSelector recipeSelector
     - // @input WebRequest webRequest
     - // @input TimeManager timeManager
+    - // @input GridContentCreator gridCC
