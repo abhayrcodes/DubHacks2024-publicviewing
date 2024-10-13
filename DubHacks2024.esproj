@@ -22,7 +22,7 @@ metaInfo:
     []
   lensName: DubHacks2024
   lensDescriptors:
-    - EXPERIMENTAL_API
+    []
   lensApplicability:
     - Front
     - Back
