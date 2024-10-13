@@ -1,0 +1,52 @@
+- !<AssetImportMetadata/77cf6bf6-7a42-4aff-87b4-80e447bbf915>
+  ImportedAssetIds:
+    JavaScriptAsset: !<reference> a6741421-6bc3-424b-9fc7-acd9b1ac09b6
+  ImporterName: JavaScriptAssetImporter
+  PrimaryAsset: !<reference> a6741421-6bc3-424b-9fc7-acd9b1ac09b6
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    JavaScriptAsset: !<own> e65bfd3c-905e-40d3-8a26-cc46a73d6c2a
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/edfc4042-e0c1-4799-b507-68be6af26ea0>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<ScriptAssetData/e65bfd3c-905e-40d3-8a26-cc46a73d6c2a>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    objectToCopy: false
+    maxCount: false
+    matchDetections: false
+    matchThreshold: false
+    lostFramesThreshold: false
+    setObjectPosition: false
+    smoothCoef: false
+    connections: false
+    mlController: false
+    camera: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - objectToCopy: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      maxCount: 30
+      matchDetections: false
+      matchThreshold: 0.500000
+      lostFramesThreshold: 4
+      setObjectPosition: false
+      smoothCoef: !<float> 0.000000
+      connections: false
+      mlController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+      camera: !<reference.Camera> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
