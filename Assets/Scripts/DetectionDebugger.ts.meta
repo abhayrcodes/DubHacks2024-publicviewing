@@ -24,14 +24,13 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    {}
+    mlController: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
-    -
-      {}
+    - mlController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - // @input Component.ScriptComponent mlController
