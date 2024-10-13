@@ -1993,9 +1993,9 @@
   ForceBasic: false
   Anchor:
     left: -1.000000
-    bottom: -0.320000
+    bottom: -0.250000
     right: 1.000000
-    top: -0.320000
+    top: -0.460000
   Offset:
     left: 0.000000
     bottom: -16.000000
@@ -11181,7 +11181,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 0.000000, y: 0.000000, z: 15.000000}
+    position: {x: 0.000000, y: 3.297364, z: 2.806320}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -11751,7 +11751,7 @@
     {}
   ScriptInputs:
     "":
-      itemPrefab: !<reference.ObjectPrefab> 124085f6-5578-44b0-a330-a137857db398
+      itemPrefab: !<reference.ObjectPrefab> 6db3c714-1232-43e5-bb18-bfb51a3c384b
       itemsCount: !<float> 10.000000
   ScriptTypes:
     "":
@@ -13473,12 +13473,14 @@
   Enabled: true
   ScriptAsset: !<reference> 745198f6-99e4-49ad-9cb8-5ef3a3985d7c
   ScriptInputsDefault:
-    {}
+    searchKeyword: true
+    timerKeyword: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
-      keyword: search
+      searchKeyword: ""
+      timerKeyword: ""
       recipeSelector: !<MappingBased.RecipeSelector> 19a1777f-d206-4ad2-97c0-eecc71576c33
       webRequest: !<MappingBased.WebRequest> 8388f3a3-1850-44b4-9b24-0cbe54237acf
   ScriptTypes:
