@@ -6,6 +6,8 @@ export class GridContentCreator extends BaseScriptComponent {
   @input
       itemsCount: number = 10;
 
+      ingredients = ["egg", "cheese", "milk", "water", "noodles", "chili", "sugar", "salt", "coconut", "goon"];
+
   onAwake() {
       if (!this.itemPrefab) {
           throw new Error('ItemPrefab is not wired in SceneObject:' +
@@ -17,6 +19,8 @@ export class GridContentCreator extends BaseScriptComponent {
 
       for (let i = 0; i < this.itemsCount; i++) {
           const item = this.itemPrefab.instantiate(this.getSceneObject());
+          print(typeof item.getChild(0).getComponent("Text").text)
+          item.getChild(0).getComponent("Text").text = this.ingredients[i];
           const screenTransform = item.getComponent('Component.ScreenTransform');
           screenTransform.offsets.setCenter(new vec2(0, yStart + yOffset * i));
           item.enabled = true;
