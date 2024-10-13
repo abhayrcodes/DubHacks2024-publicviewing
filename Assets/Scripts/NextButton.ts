@@ -1,7 +1,7 @@
 import { PinchButton } from "SpectaclesInteractionKit/Components/UI/PinchButton/PinchButton";
 
 @component
-export class NewScript extends BaseScriptComponent {
+export class NextButton extends BaseScriptComponent {
   @input pinchButton: PinchButton;
   @input isBack: boolean;
   @input stepText: Text;
