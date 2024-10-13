@@ -1,18 +1,17 @@
 @component
 export class GridContentCreator extends BaseScriptComponent {
-
   @input
-      itemPrefab: ObjectPrefab;
+  itemPrefab: ObjectPrefab;
   @input
-      itemsCount: number = 10;
+  itemsCount: number = 10;
 
     ingredients = ["egg", "cheese", "milk", "water", "noodles", "chili", "sugar", "salt", "coconut", "goon"];
 
   onAwake() {
-    print("first");
     if (!this.itemPrefab) {
-        throw new Error('ItemPrefab is not wired in SceneObject:' +
-        this.getSceneObject().name);
+      throw new Error(
+        "ItemPrefab is not wired in SceneObject:" + this.getSceneObject().name
+      );
     }
 
     const yStart = 0;

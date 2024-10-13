@@ -49,7 +49,7 @@ export class RecipeSelector extends BaseScriptComponent {
     };
   }
 
-  loadData(jsonString: string) {
+  public loadData(jsonString: string) {
     const jsonData = JSON.parse(jsonString);
 
     for (const elem of jsonData) {
