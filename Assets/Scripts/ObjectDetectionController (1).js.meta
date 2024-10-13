@@ -1,18 +1,18 @@
-- !<AssetImportMetadata/77cf6bf6-7a42-4aff-87b4-80e447bbf915>
+- !<AssetImportMetadata/c6d0cec4-d310-4f67-b94c-8e09d7039150>
   ImportedAssetIds:
-    JavaScriptAsset: !<reference> a6741421-6bc3-424b-9fc7-acd9b1ac09b6
+    JavaScriptAsset: !<reference> 8c97c8c5-934d-4e34-803b-1fa164cd357c
   ImporterName: JavaScriptAssetImporter
-  PrimaryAsset: !<reference> a6741421-6bc3-424b-9fc7-acd9b1ac09b6
+  PrimaryAsset: !<reference> 8c97c8c5-934d-4e34-803b-1fa164cd357c
   PackageType: NotAPackage
   PackagePolicy: CannotBeUnpacked
   AssetDataMap:
-    JavaScriptAsset: !<own> e65bfd3c-905e-40d3-8a26-cc46a73d6c2a
+    JavaScriptAsset: !<own> 91dcb34e-3d51-4856-ab35-8a495614a78b
   DependentFiles:
     []
-  ImporterSettings: !<AssetImporterSettings/edfc4042-e0c1-4799-b507-68be6af26ea0>
+  ImporterSettings: !<AssetImporterSettings/22b5112b-b388-4e2e-92df-912ae0c37d4a>
     {}
   CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
-- !<ScriptAssetData/e65bfd3c-905e-40d3-8a26-cc46a73d6c2a>
+- !<ScriptAssetData/91dcb34e-3d51-4856-ab35-8a495614a78b>
   SvgIcon: ""
   Description: ""
   InternalVersion: 0
@@ -24,16 +24,16 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    objectToCopy: false
-    maxCount: false
+    camera: false
+    connections: false
+    lostFramesThreshold: false
     matchDetections: false
     matchThreshold: false
-    lostFramesThreshold: false
+    maxCount: false
+    mlController: false
+    objectToCopy: false
     setObjectPosition: false
     smoothCoef: false
-    connections: false
-    mlController: false
-    camera: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
