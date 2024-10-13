@@ -9,9 +9,9 @@
     - !<own> d18661e0-ad87-45c1-b14f-7d8ece256632
     - !<own> d202f251-64e5-4fdc-9f72-f187e4822534
     - !<own> cff51165-276d-4bbb-bd5f-9d63194e6303
-    - !<own> c530ab5f-5b6c-4a1a-9364-fab75e7bf60e
     - !<own> ddff47fb-492b-4beb-bc2d-17f636cc576c
     - !<own> 3b36dfe5-3f04-4124-9cae-efea0094335d
+    - !<own> 095d15ba-4976-437b-a5d9-4f3585a76aaf
   layers: !<Layers/267ee9a7-aff2-4f9d-9a49-f71214747d03>
     userLayers:
       []
@@ -720,6 +720,21 @@
   ScriptTypes:
     "":
       {}
+- !<SceneObject/095d15ba-4976-437b-a5d9-4f3585a76aaf>
+  PrefabRemaps:
+    []
+  Name: Ingredient Check
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: -59.474007, y: 0.000000, z: -100.000000}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> c530ab5f-5b6c-4a1a-9364-fab75e7bf60e
+  Components:
+    - !<own> 9d7925f6-9886-422e-a465-a2d05277e2d6
 - !<SceneObject/0979b49a-4a5f-4339-86e8-3640d54917de>
   PrefabRemaps:
     []
@@ -4927,8 +4942,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 18.000000, y: -7.000000, z: -0.250000}
-    rotation: {x: -0.000000, y: -0.000000, z: 0.000000}
+    position: {x: 18.000000, y: -7.000000, z: -20.745941}
+    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 40.000000, y: 40.000000, z: 40.000000}
     hasSegmentScaleCompensation: false
   Children:
@@ -5442,7 +5457,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 5.118073, y: 5.752996, z: 0.000000}
+    position: {x: 6.646049, y: 11.960207, z: -24.736847}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 2.000000, y: 2.000000, z: 2.000000}
     hasSegmentScaleCompensation: false
@@ -9000,6 +9015,54 @@
     []
   Components:
     - !<own> 03142dbd-a09e-4262-a111-19e44ac744e3
+- !<ScriptComponent/9d7925f6-9886-422e-a465-a2d05277e2d6>
+  PrefabRemaps:
+    []
+  Name: ContainerFrame
+  Enabled: true
+  ScriptAsset: !<reference> 94ea82ba-1d42-4617-b71f-c92262f5960b
+  ScriptInputsDefault:
+    worldCursor: true
+    border: true
+    constantPadding: true
+    allowScaling: true
+    autoScaleContent: true
+    isContentInteractable: true
+    allowTranslation: true
+    xAlways: true
+    yAlways: true
+    worldSnapping: true
+    isFollowing: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      worldCursor: !<MappingBased.CursorController> 00000000-0000-0000-0000-000000000000
+      autoShowHide: false
+      innerSize: !<Vec2> {x: 16.000000, y: 32.000000}
+      border: !<float> 4.000000
+      constantPadding: !<Vec2> {x: 0.000000, y: 0.000000}
+      allowScaling: true
+      autoScaleContent: true
+      isContentInteractable: false
+      allowTranslation: true
+      minimumSize: !<Vec2> {x: 8.000000, y: 8.000000}
+      maximumSize: !<Vec2> {x: 200.000000, y: 200.000000}
+      useBillboarding: true
+      xOnTranslate: true
+      xAlways: false
+      yOnTranslate: true
+      yAlways: false
+      useSnapping: true
+      itemSnapping: true
+      worldSnapping: false
+      showFollowButton: true
+      useFOVFollow: true
+      isFollowing: false
+      showCloseButton: false
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/9dedaa98-754f-4653-bf5f-bec695afd0bd>
   PrefabRemaps:
     []
@@ -11176,7 +11239,7 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: -40.000000, y: 0.000000, z: -60.000000}
+    position: {x: -6.399078, y: 4.158680, z: 24.935562}
     rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
@@ -11747,7 +11810,7 @@
     {}
   ScriptInputs:
     "":
-      itemPrefab: !<reference.ObjectPrefab> 124085f6-5578-44b0-a330-a137857db398
+      itemPrefab: !<reference.ObjectPrefab> 6db3c714-1232-43e5-bb18-bfb51a3c384b
       itemsCount: !<float> 10.000000
   ScriptTypes:
     "":
@@ -13248,8 +13311,8 @@
   Enabled: true
   Layers: 1
   LocalTransform:
-    position: {x: 18.000000, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: 0.000000, z: 90.000000}
+    position: {x: 18.000000, y: 0.000000, z: -20.745941}
+    rotation: {x: 0.000000, y: -0.000000, z: 90.000000}
     scale: {x: 0.750000, y: 0.750000, z: 0.750000}
     hasSegmentScaleCompensation: false
   Children:
