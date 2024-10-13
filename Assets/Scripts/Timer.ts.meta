@@ -24,13 +24,25 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
+    decreaseTimeButton: false
+    increaseTimeButton: false
+    startButton: false
+    stopButton: false
     timerLength: false
   ScriptTypesHidden:
     {}
   DefaultScriptInputs:
     - timerLength: !<float> 0.000000
+      increaseTimeButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
+      decreaseTimeButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
+      startButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
+      stopButton: !<MappingBased.PinchButton> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
     - // @input float timerLength
+    - // @input PinchButton increaseTimeButton
+    - // @input PinchButton decreaseTimeButton
+    - // @input PinchButton startButton
+    - // @input PinchButton stopButton
