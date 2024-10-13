@@ -205,6 +205,7 @@
   Components:
     - !<own> 2f4a00cd-9701-4721-aa98-c34f600e00f4
     - !<own> 5c1973ae-e840-4e99-bf08-86fc4f2b3038
+    - !<own> 37f7a363-005b-4fdd-b9be-64a3efb8d308
 - !<SceneObject/00b945e1-3d88-4a11-8295-e420de7e9fa4>
   PrefabRemaps:
     []
@@ -364,7 +365,6 @@
     constantPadding: true
     autoScaleContent: true
     isContentInteractable: true
-    allowTranslation: true
     useBillboarding: true
     xOnTranslate: true
     xAlways: true
@@ -376,7 +376,6 @@
     showFollowButton: true
     useFOVFollow: true
     isFollowing: true
-    showCloseButton: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
@@ -389,7 +388,7 @@
       allowScaling: false
       autoScaleContent: true
       isContentInteractable: false
-      allowTranslation: true
+      allowTranslation: false
       minimumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       maximumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       useBillboarding: false
@@ -403,7 +402,7 @@
       showFollowButton: false
       useFOVFollow: false
       isFollowing: false
-      showCloseButton: true
+      showCloseButton: false
   ScriptTypes:
     "":
       {}
@@ -1659,6 +1658,41 @@
     bottom: 0.000000
     right: 0.000000
     top: 0.000000
+- !<ScriptComponent/19a1777f-d206-4ad2-97c0-eecc71576c33>
+  PrefabRemaps:
+    []
+  Name: RecipeSelector
+  Enabled: true
+  ScriptAsset: !<reference> e7c867f3-84c0-425c-850f-a447567a09f8
+  ScriptInputsDefault:
+    recipe1: true
+    recipe2: true
+    recipe3: true
+    recipe4: true
+    recipeController: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      recipe1: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipe2: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipe3: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipe4: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipeController: !<MappingBased.RecipeController> 00000000-0000-0000-0000-000000000000
+      recipeData:
+        - rcpName: ""
+          ingredients: !<string[]>
+            []
+          steps: !<string[]>
+            - ""
+        - rcpName: ""
+          ingredients: !<string[]>
+            []
+          steps: !<string[]>
+            []
+  ScriptTypes:
+    "":
+      {}
 - !<ScriptComponent/19f5ec18-d797-4b7d-8173-2cc3e37d2ac6>
   PrefabRemaps:
     []
@@ -2873,7 +2907,6 @@
     constantPadding: true
     autoScaleContent: true
     isContentInteractable: true
-    allowTranslation: true
     useBillboarding: true
     xOnTranslate: true
     xAlways: true
@@ -2898,7 +2931,7 @@
       allowScaling: false
       autoScaleContent: true
       isContentInteractable: false
-      allowTranslation: true
+      allowTranslation: false
       minimumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       maximumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       useBillboarding: false
@@ -3460,6 +3493,23 @@
   Components:
     - !<own> 2aac239e-11b5-41e6-aca1-f36de367731b
     - !<own> 1a4016bf-8cec-4f79-bda8-c34b6660e85d
+- !<ScriptComponent/37f7a363-005b-4fdd-b9be-64a3efb8d308>
+  PrefabRemaps:
+    []
+  Name: RecipeIndv
+  Enabled: true
+  ScriptAsset: !<reference> a9811163-b702-489b-8598-5df4f3c527ae
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      selectionButton: !<MappingBased.PinchButton> 5c1973ae-e840-4e99-bf08-86fc4f2b3038
+      nameText: !<reference.Text> af8d41e6-29b8-470f-bdeb-6a2a373ad796
+  ScriptTypes:
+    "":
+      {}
 - !<ScreenTransform/37f803dd-500a-4295-b889-2608e1872e55>
   PrefabRemaps:
     []
@@ -3608,6 +3658,7 @@
   Components:
     - !<own> 03a64c0b-5c7c-416a-b1a7-f03046e5b2b9
     - !<own> c61548d2-9462-4264-953f-6baaa36c4809
+    - !<own> df5f9eff-6ffd-46ff-ae65-616257d426a3
 - !<SceneObject/3e172dc6-cb79-41df-acc5-790e75d711fc>
   PrefabRemaps:
     []
@@ -4080,7 +4131,6 @@
     constantPadding: true
     autoScaleContent: true
     isContentInteractable: true
-    allowTranslation: true
     useBillboarding: true
     xOnTranslate: true
     xAlways: true
@@ -4105,7 +4155,7 @@
       allowScaling: false
       autoScaleContent: true
       isContentInteractable: false
-      allowTranslation: true
+      allowTranslation: false
       minimumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       maximumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       useBillboarding: false
@@ -8272,7 +8322,6 @@
     constantPadding: true
     autoScaleContent: true
     isContentInteractable: true
-    allowTranslation: true
     useBillboarding: true
     xOnTranslate: true
     xAlways: true
@@ -8297,7 +8346,7 @@
       allowScaling: false
       autoScaleContent: true
       isContentInteractable: false
-      allowTranslation: true
+      allowTranslation: false
       minimumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       maximumSize: !<Vec2> {x: 14.000000, y: 2.000000}
       useBillboarding: false
@@ -8800,6 +8849,23 @@
   ScriptTypes:
     "":
       {}
+- !<ScriptComponent/a7c04eae-1cc7-4138-b6e6-2a8775c91925>
+  PrefabRemaps:
+    []
+  Name: RecipeIndv
+  Enabled: true
+  ScriptAsset: !<reference> a9811163-b702-489b-8598-5df4f3c527ae
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      selectionButton: !<MappingBased.PinchButton> 12b08726-f823-420c-9f41-d4b3e0188518
+      nameText: !<reference.Text> 2220f9c3-b811-4861-b90f-a4c846ca19af
+  ScriptTypes:
+    "":
+      {}
 - !<RenderMeshVisual/a86413e8-aa6d-4aa6-b302-a073b314c1f3>
   PrefabRemaps:
     []
@@ -9166,6 +9232,23 @@
     LineSpacing: 1.000000
     CapitalizationOverride: None
   DepthTest: false
+- !<ScriptComponent/ae90541d-5d25-43c3-861d-3889d10563bf>
+  PrefabRemaps:
+    []
+  Name: RecipeIndv
+  Enabled: true
+  ScriptAsset: !<reference> a9811163-b702-489b-8598-5df4f3c527ae
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      selectionButton: !<MappingBased.PinchButton> f5bfa9f9-d00d-40e8-bd0a-a8dc40fcf205
+      nameText: !<reference.Text> adcca007-ee62-4f38-b94c-4283a1319b8d
+  ScriptTypes:
+    "":
+      {}
 - !<SceneObject/aef9ede0-0502-49e1-b39a-6597dc15eb77>
   PrefabRemaps:
     []
@@ -10378,6 +10461,7 @@
   Components:
     - !<own> 49fc746e-79d4-4559-b3c4-d5cc2e133b78
     - !<own> 12b08726-f823-420c-9f41-d4b3e0188518
+    - !<own> a7c04eae-1cc7-4138-b6e6-2a8775c91925
 - !<ScreenTransform/c8e98760-769e-498b-bd72-b9e23734bd36>
   PrefabRemaps:
     []
@@ -10631,6 +10715,7 @@
   Components:
     - !<own> a0455a53-4769-4e7d-84ab-0eb35b1f154b
     - !<own> f5bfa9f9-d00d-40e8-bd0a-a8dc40fcf205
+    - !<own> ae90541d-5d25-43c3-861d-3889d10563bf
 - !<Canvas/cedd3eb6-2f7e-4d66-af93-1e3eb28bead8>
   PrefabRemaps:
     []
@@ -10754,6 +10839,7 @@
     - !<own> 2558ce4e-9177-4dc6-95e9-68eaa7424308
   Components:
     - !<own> 14b9af68-8c55-4bfe-9ded-cbb43b18c8b9
+    - !<own> 19a1777f-d206-4ad2-97c0-eecc71576c33
 - !<SceneObject/d2538a37-a2df-40d0-88a7-b825bb761824>
   PrefabRemaps:
     []
@@ -11274,6 +11360,23 @@
       squishObject: !<reference.SceneObject> 03e5a0b0-7a69-4281-988f-1e3cb4ece25b
       verticalSquish: 0.610000
       horizontalSquish: !<float> 1.000000
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/df5f9eff-6ffd-46ff-ae65-616257d426a3>
+  PrefabRemaps:
+    []
+  Name: RecipeIndv
+  Enabled: true
+  ScriptAsset: !<reference> a9811163-b702-489b-8598-5df4f3c527ae
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      selectionButton: !<MappingBased.PinchButton> c61548d2-9462-4264-953f-6baaa36c4809
+      nameText: !<reference.Text> 14753384-ed6d-4880-ad3d-7dfd6d379e29
   ScriptTypes:
     "":
       {}

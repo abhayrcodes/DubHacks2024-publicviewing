@@ -7,9 +7,13 @@ export class RecipeIndv extends BaseScriptComponent {
 
   onAwake() {}
 
-  registerOnPinch(f: () => void) {
+  public registerOnPinch(f: () => void) {
     this.selectionButton.onButtonPinched.add(() => {
       f();
     });
+  }
+
+  public updateText(txt: string) {
+    this.nameText.text = txt;
   }
 }

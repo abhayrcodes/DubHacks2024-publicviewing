@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/e7653696-fad5-487e-a389-9ea7b97343a6>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> e7c867f3-84c0-425c-850f-a447567a09f8
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> e7c867f3-84c0-425c-850f-a447567a09f8
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 5951a179-ec67-4f42-90d8-7e38598be9f7
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/d0cb71bf-f270-4271-9daa-5829f1ff933f>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/5951a179-ec67-4f42-90d8-7e38598be9f7>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    recipe1: false
+    recipe2: false
+    recipe3: false
+    recipe4: false
+    recipeController: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - recipe1: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipe2: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipe3: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipe4: !<MappingBased.RecipeIndv> 00000000-0000-0000-0000-000000000000
+      recipeController: !<MappingBased.RecipeController> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input RecipeIndv recipe1
+    - // @input RecipeIndv recipe2
+    - // @input RecipeIndv recipe3
+    - // @input RecipeIndv recipe4
+    - // @input RecipeController recipeController
