@@ -5,12 +5,15 @@ export class GridContentCreator extends BaseScriptComponent {
 
   full = {
     ingredients: [
-      { chicken: "1.5 lbs (700 grams) boneless chicken thighs or breasts" },
+      {
+        chickenasdfasdfasdfafs:
+          "1.5 lbs (700 grams) boneless chicken thighs or breasts",
+      },
       { "lemon juice": "1 tablespoon" },
       { oil: "3 tablespoons (plus 1 tablespoon for marinating) or ghee" },
       { "ginger garlic paste": "2 tablespoons" },
       { "kasuri methi (dried fenugreek leaves)": "3 tablespoons" },
-      { "Greek yogurt": "½ cup" },
+      { "Greek yogurt asdf asdf asdf asdfasdf asdf": "½ cup" },
       { onions: "1.5 cups (1 large or 2 medium)" },
       { "green chili": "1 (optional)" },
       {
