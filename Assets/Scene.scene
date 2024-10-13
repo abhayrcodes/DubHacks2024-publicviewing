@@ -3942,7 +3942,7 @@
 - !<SceneObject/442eee21-bec8-488c-bb0b-56c16786cd24>
   PrefabRemaps:
     []
-  Name: Select Recipe
+  Name: Ingredients
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -5824,7 +5824,7 @@
 - !<SceneObject/5f78eb80-f09e-4cd6-aa65-5d42a9cb5de7>
   PrefabRemaps:
     []
-  Name: Recipe Controller
+  Name: Ingredients Controller
   Enabled: true
   Layers: 1
   LocalTransform:
@@ -12685,12 +12685,13 @@
   Enabled: true
   ScriptAsset: !<reference> 745198f6-99e4-49ad-9cb8-5ef3a3985d7c
   ScriptInputsDefault:
-    {}
+    recipeSelector: true
   ScriptTypesDefault:
     {}
   ScriptInputs:
     "":
       keyword: search
+      recipeSelector: !<MappingBased.RecipeSelector> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     "":
       {}
