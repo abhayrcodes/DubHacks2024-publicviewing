@@ -21,11 +21,10 @@ export class WebRequest extends BaseScriptComponent {
           content: s,
         },
       ],
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${OPEN_AI_KEY}`,
-      },
     });
+
+    request.setHeader("Content-Type", "application/json");
+    request.setHeader("Authorization", `Bearer ${OPEN_AI_KEY}`);
 
     this.remoteServiceModule.performHttpRequest(request, (response) => {
       print(`HTTP CODE ${response.statusCode}`);
