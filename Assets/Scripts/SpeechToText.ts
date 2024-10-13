@@ -1,4 +1,5 @@
 import { RecipeSelector } from "./RecipeSelector";
+import { TimeManager } from "./TimeManager";
 import { cleanString, getNumber } from "./utils";
 import { WebRequest } from "./WebRequest";
 
@@ -8,6 +9,7 @@ export class SpeechToText extends BaseScriptComponent {
   @input timerKeyword: string;
   @input recipeSelector: RecipeSelector;
   @input webRequest: WebRequest;
+  @input timeManager: TimeManager;
 
   private readonly voiceMlModule =
     require("LensStudio:VoiceMLModule") as VoiceMLModule;
@@ -87,18 +89,22 @@ export class SpeechToText extends BaseScriptComponent {
   }
 
   handleTimer(transcription: string) {
-    const index = transcription.toLowerCase().indexOf(this.timerKeyword);
+    const cleaned = cleanString(transcription).toLowerCase();
+
+    print(cleaned);
+
+    const index = cleaned.indexOf(this.timerKeyword);
 
     if (index == -1) return;
 
-    const rest = cleanString(transcription).slice(
+    const rest = cleaned.slice(
       index + this.timerKeyword.length,
       transcription.length
     );
 
     const number = parseInt(rest.trim().split(" ")[1]);
 
-    print(number);
+    this.timeManager.instantiateTimer(number);
   }
 
   onStart() {

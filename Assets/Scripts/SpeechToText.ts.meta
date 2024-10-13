@@ -26,6 +26,7 @@
   ScriptInputsHidden:
     recipeSelector: false
     searchKeyword: false
+    timeManager: false
     timerKeyword: false
     webRequest: false
   ScriptTypesHidden:
@@ -35,6 +36,7 @@
       webRequest: !<MappingBased.WebRequest> 00000000-0000-0000-0000-000000000000
       searchKeyword: ""
       timerKeyword: ""
+      timeManager: !<MappingBased.TimeManager> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
@@ -43,3 +45,4 @@
     - // @input string timerKeyword
     - // @input RecipeSelector recipeSelector
     - // @input WebRequest webRequest
+    - // @input TimeManager timeManager
