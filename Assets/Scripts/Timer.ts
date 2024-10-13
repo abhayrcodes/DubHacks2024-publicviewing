@@ -71,6 +71,10 @@ export class Timer extends BaseScriptComponent {
     return ret;
   }
 
+  setTime(amount: number) {
+    this.currentValue = amount * 60;
+  }
+
   onUpdate() {
     if (this.currentValue <= 0) {
       return;

@@ -278,7 +278,7 @@
 - !<ScreenTransform/ad80712e-c2de-4e2c-ae5e-9d98799be867>
   PrefabRemaps:
     []
-  Name: Screen Transform
+  Name: InteractableAudioFeedback
   Enabled: true
   IsAdvanced: false
   Constraints:
@@ -417,7 +417,7 @@
 - !<SceneObject/be431420-0e55-4d96-a67f-5f03887fdfc3>
   PrefabRemaps:
     []
-  Name: PinchButton
+  Name: InteractableColorFeedback
   Enabled: true
   Layers: 1
   LocalTransform:

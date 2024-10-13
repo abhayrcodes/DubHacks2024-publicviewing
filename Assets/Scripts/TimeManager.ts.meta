@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/50e4600b-bc60-42b3-b075-35964d19028a>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> af91c350-bf7f-4fb1-ac10-43256767490d
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> af91c350-bf7f-4fb1-ac10-43256767490d
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> 83427836-e14f-4cda-8ff0-257ab4410cbe
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/bd178e0d-69ff-4287-9638-9d386c7fd14a>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/83427836-e14f-4cda-8ff0-257ab4410cbe>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    timerPrefab: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - timerPrefab: !<reference.ObjectPrefab> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Asset.ObjectPrefab timerPrefab
