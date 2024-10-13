@@ -83,7 +83,7 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -0.300000
+    left: -1.000000
     bottom: -1.000000
     right: 1.000000
     top: 1.000000
@@ -138,7 +138,7 @@
   Anchor:
     left: 0.825276
     bottom: 0.000000
-    right: 0.825276
+    right: 0.825300
     top: 0.000000
   Offset:
     left: -1.500000
@@ -270,26 +270,31 @@
   Enabled: true
   IsAdvanced: false
   Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
+    pinToLeft: true
+    pinToTop: true
+    pinToRight: true
+    pinToBottom: true
     fixedWidth: false
     fixedHeight: false
     deactivatedFixedSprite: false
     deactivatedFixedPivot: false
   Pivot: {x: 0.000000, y: 0.000000}
   Transform:
-    position: {x: 0.825276, y: 0.000000, z: 0.000000}
-    rotation: {x: 0.000000, y: -0.000000, z: 0.000000}
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
     scale: {x: 1.000000, y: 1.000000, z: 1.000000}
     hasSegmentScaleCompensation: false
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: 0.825276
+    left: -1.000000
+    bottom: -1.000000
+    right: 1.000000
+    top: 1.000000
+  Offset:
+    left: 0.000000
     bottom: 0.000000
-    right: 0.825276
+    right: 0.000000
     top: 0.000000
 - !<Text/a54d0232-7f15-48a2-a4fd-01a11b427454>
   PrefabRemaps:
@@ -308,7 +313,7 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 60
+  FontSize: 50
   Font: !<reference> 00000000-0000-0000-0000-000000000000
   LayoutRect:
     left: -7.500000
@@ -378,7 +383,7 @@
   PrefabRemaps:
     []
   Name: Ingredient Item
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}

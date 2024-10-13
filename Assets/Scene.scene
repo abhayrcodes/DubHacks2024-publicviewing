@@ -1771,7 +1771,7 @@
   RawMode: true
   ForceBasic: true
   Anchor:
-    left: -0.300000
+    left: -1.000000
     bottom: -1.000000
     right: 1.000000
     top: 1.000000
@@ -2800,7 +2800,7 @@
   ShowEditingPreview: true
   TouchHandler: !<reference> 00000000-0000-0000-0000-000000000000
   SizeToFit: false
-  FontSize: 60
+  FontSize: 50
   Font: !<reference> 00000000-0000-0000-0000-000000000000
   LayoutRect:
     left: -7.500000
@@ -2877,10 +2877,10 @@
   Enabled: true
   IsAdvanced: false
   Constraints:
-    pinToLeft: false
-    pinToTop: false
-    pinToRight: false
-    pinToBottom: false
+    pinToLeft: true
+    pinToTop: true
+    pinToRight: true
+    pinToBottom: true
     fixedWidth: false
     fixedHeight: false
     deactivatedFixedSprite: false
@@ -9977,7 +9977,7 @@
   Anchor:
     left: 0.825276
     bottom: 0.000000
-    right: 2.000000
+    right: 0.825300
     top: 0.000000
   Offset:
     left: -1.500000
@@ -12058,7 +12058,7 @@
     - e7830e82-1a2d-4eec-994f-2123637135f5: a5d1f332-2c02-4023-9f41-2b76d68bf457
     - ef52d115-d9a1-458b-b59a-c821143cde84: f2af675e-e499-4082-99cb-096dabf6c149
   Name: Ingredient Item
-  Enabled: true
+  Enabled: false
   Layers: 1
   LocalTransform:
     position: {x: 0.000000, y: 0.000000, z: 0.000000}
