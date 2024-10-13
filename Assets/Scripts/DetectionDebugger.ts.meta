@@ -1,0 +1,36 @@
+- !<AssetImportMetadata/d339c054-e6cb-4bc1-a5f6-73c7c7dbbf0b>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> e292b47f-a6ce-409c-a61f-a37d3ed5d0c0
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> e292b47f-a6ce-409c-a61f-a37d3ed5d0c0
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  AssetDataMap:
+    TypeScriptAsset: !<own> aa43f908-4b23-4f2d-b5b0-4351f2776017
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings/cb0ad9e2-2404-453d-a94d-3b1b85b5d49b>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/aa43f908-4b23-4f2d-b5b0-4351f2776017>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 00000000-0000-0000-0000-000000000000
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    mlController: false
+  ScriptTypesHidden:
+    {}
+  DefaultScriptInputs:
+    - mlController: !<reference.ScriptComponent> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.ScriptComponent mlController

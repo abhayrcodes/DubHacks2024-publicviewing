@@ -10,7 +10,7 @@ viewConfig:
     device: Spectacles (2024)
     cameraFov: nan
     fullFrameAspect: 0.666660
-    viewport: Maximized
+    viewport: Normal
     output: Live
     stereoOutputEye: Center
     deviceTypeOverride: Unknown
@@ -22,7 +22,7 @@ metaInfo:
     []
   lensName: DubHacks2024
   lensDescriptors:
-    - EXPERIMENTAL_API
+    []
   lensApplicability:
     - Front
     - Back
